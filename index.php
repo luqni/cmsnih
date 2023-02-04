@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>New Age - Start Bootstrap Theme</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/frontend/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
@@ -15,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="assets/css/styles.css" rel="stylesheet" />
+        <link href="assets/frontend/css/styles.css" rel="stylesheet" />
     </head>
     <style>
         .center {
@@ -29,7 +29,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
-                <img src="assets/img/botqu.png" alt="..." style="height: 3rem" />
+                <img src="assets/frontend/img/botqu.png" alt="..." style="height: 3rem" />
                 <!-- <a class="navbar-brand fw-bold" href="#page-top">Blast and Bot WA Unofficial</a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -67,7 +67,7 @@
                     <div class="col-lg-6">
                         <!-- Masthead device mockup feature-->
                         <div class="masthead-device-mockup">
-                            <img class="center" src="assets/img/imagebot.png" width="100%" alt="image-bot"/>
+                            <img class="center" src="assets/frontend/img/imagebot.png" width="100%" alt="image-bot"/>
                                 <defs>
                                     <linearGradient id="circleGradient" gradientTransform="rotate(45)">
                                         <stop class="gradient-start-color" offset="0%"></stop>
@@ -90,7 +90,7 @@
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
                         <div class="h2 fs-1 text-white mb-4">"An intuitive solution to a common problem that we all face, wrapped up in a single app!"</div>
-                        <img src="assets/img/tnw-logo.svg" alt="..." style="height: 3rem" />
+                        <img src="assets/frontend/img/tnw-logo.svg" alt="..." style="height: 3rem" />
                     </div>
                 </div>
             </div>
@@ -142,7 +142,7 @@
                     <div class="col-lg-4 order-lg-0">
                         <!-- Features section device mockup-->
                         <div class="features-device-mockup">
-                            <img class="center" src="assets/img/robot.png" width="100%" alt="image-bot"/>
+                            <img class="center" src="assets/frontend/img/robot.png" width="100%" alt="image-bot"/>
                                 <defs>
                                     <linearGradient id="circleGradient" gradientTransform="rotate(45)">
                                         <stop class="gradient-start-color" offset="0%"></stop>
@@ -192,8 +192,8 @@
             <div class="container px-5">
                 <h2 class="text-center text-white font-alt mb-4">Get the app now!</h2>
                 <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                    <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
-                    <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+                    <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/frontend/img/google-play-badge.svg" alt="..." /></a>
+                    <a href="#!"><img class="app-badge" src="assets/frontend/img/app-store-badge.svg" alt="..." /></a>
                 </div>
             </div>
         </section>
@@ -311,7 +311,7 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="assets/js/scripts.js"></script>
+        <script src="assets/frontend/js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
