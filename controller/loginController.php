@@ -1,7 +1,7 @@
 <?php
 
 define('BASEPATH', true); //access connection script if you omit this line file will be blank
-include 'config/db.php'; //require connection script
+include '../config/db.php'; //require connection script
 // die('halo'); 
 // print_r(isset($_POST['submit']));die();
 error_reporting(0);
@@ -45,7 +45,7 @@ if($user === false){
         //Provide the user with a login session.
          
         $_SESSION['username'] = $username;
-       echo '<script>window.location.replace("dashboard.php");</script>';
+       echo '<script>window.location.replace("../view/dashboard.php");</script>';
         exit;
         
     } else{

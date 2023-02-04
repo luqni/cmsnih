@@ -1,7 +1,7 @@
 <?php
 
 define('BASEPATH', true); //access connection script if you omit this line file will be blank
-include 'config/db.php'; //require connection script
+include '../config/db.php'; //require connection script
 // die('halo'); 
 // print_r(isset($_POST['submit']));die();
  if(isset($_POST['submit'])){  
@@ -44,7 +44,7 @@ include 'config/db.php'; //require connection script
    if($stmt->execute()){
     echo '<script>alert("New account created.")</script>';
     //redirect to another page
-    echo '<script>window.location.replace("index.php")</script>';
+    echo '<script>window.location.replace("../index.php")</script>';
      
    }else{
        echo '<script>alert("An error occurred")</script>';

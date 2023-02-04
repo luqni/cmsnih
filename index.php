@@ -219,7 +219,7 @@
                         <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body border-0 p-4">
-                        <form   action="loginController.php" method="post">
+                        <form   action="./controller/loginController.php" method="post">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" name="username" type="text" placeholder="Enter your name..." data-sb-validations="required" />
