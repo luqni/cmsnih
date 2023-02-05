@@ -26,3 +26,7 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/dashboard/js/main.js"></script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js"></script>

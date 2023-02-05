@@ -45,6 +45,8 @@ if($user === false){
         //Provide the user with a login session.
          
         $_SESSION['username'] = $username;
+        $_SESSION['user_id']  = $user['id'];
+
        echo '<script>window.location.replace("../view/dashboard.php");</script>';
         exit;
         
