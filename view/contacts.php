@@ -59,7 +59,14 @@ if (!isset($_SESSION['username'])) {
                 <td><?php echo $row['id']; ?></td>
                 <td><?php echo $row['name']; ?></td>
                 <td><?php echo $row['count']; ?></td>
-                <td><a href="#" onclick="viewFunction(<?php echo $row['id']; ?>)"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="view numbers" class="bi bi-eye-fill"></i></a> <i class="bi bi-pencil-square"></i> <i class="bi bi-trash-fill"></i> <i class="bi bi-box-arrow-in-down"></i></td>
+                <td>
+                  <a href="#" onclick="viewFunction(<?php echo $row['id']; ?>)">
+                  <i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="detail contacts" class="bi bi-eye-fill" data-bs-toggle="modal" data-bs-target="#editModal"></i></a> 
+                  <a href="#" onclick="editFunction(<?php echo $row['id']; ?>, '<?php echo $row['name']; ?>')">
+                  <i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="edit contacts" class="bi bi-pencil-square"></i></a>
+                  <i class="bi bi-box-arrow-in-down"></i>
+                  <i class="bi bi-trash-fill"></i>
+                </td>
               </tr>
             <?php } ?>
           </tbody>
@@ -84,7 +91,7 @@ if (!isset($_SESSION['username'])) {
             </div> 
         </div>
         <div class="modal-footer">
-        <input  name="user_id" type="hidden" value=<?php echo $_SESSION['user_id']; ?>/>
+          <input  name="user_id" type="hidden" value=<?php echo $_SESSION['user_id']; ?>/>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="submit" name="submit" class="btn btn-primary">Save changes</button>
         </div>
@@ -100,17 +107,18 @@ if (!isset($_SESSION['username'])) {
         <h5 class="modal-title">Edit Contact</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form   action="../controller/contactController.php" method="post">
+      <form   action="../controller/editContactController.php" method="post">
         <div class="modal-body">
             <!-- Name input-->
             <div class="form-floating mb-3">
-                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                <input class="form-control" id="editname" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                 <label for="name">name</label>
                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
             </div> 
         </div>
         <div class="modal-footer">
-        <input  name="user_id" type="hidden" value=<?php echo $_SESSION['user_id']; ?>/>
+          <input  name="id" id="idContact" type="hidden"/>
+          <input  name="user_id" type="hidden" value=<?php echo $_SESSION['user_id']; ?>/>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="submit" name="submit" class="btn btn-primary">Save changes</button>
         </div>
@@ -184,6 +192,14 @@ if (!isset($_SESSION['username'])) {
           }
       });
     }
+
+
+  function editFunction(id, name) {
+    $("#idContact").val( id );
+    $("#editname").val( name );
+    $("#editModal").modal('show');
+  }
+
   $(document).ready(function() {
     $('#example').DataTable();
   });
